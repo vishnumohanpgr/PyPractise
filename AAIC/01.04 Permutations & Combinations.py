@@ -6,10 +6,10 @@ Number of combinations of n objects taken r at a time is: c(n, r) = n! / (r!*(n-
 
 
 def fact(n):
-  if n in {0, 1}:
-    return 1
-  else:
-    return n * fact(n - 1)
+    if n in {0, 1}:
+        return 1
+    else:
+        return n * fact(n - 1)
 
 
 def permu_comb():  # Function that takes values for n & r and, prints out their permutation & combination results.
