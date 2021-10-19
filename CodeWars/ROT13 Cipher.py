@@ -12,10 +12,7 @@ Please note that using encode is considered cheating.
 def nextletter(letter):
     letters = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
     if letter in letters:
-        if letters.index(letter) <= 26:
-            return letters[(letters.index(letter) + 26)]
-        else:
-            return letters[letters.index(letter) - 26]
+        return letters[(letters.index(letter) + 26) % 52]
     else:
         return letter
 
@@ -28,4 +25,4 @@ def rot13(message):
     return result
 
 
-print(rot13('Apple13'))
+print(rot13('Apple13 zZMm'))
