@@ -42,7 +42,7 @@ i = 126
 print(df_original.iloc[0])
 
 # Return the data as a csv file
-df_original.to_csv('full_world_data.csv', index=False, header=True)
+#df_original.to_csv('full_world_data.csv', index=False, header=True)
 
 dbconnect.commit()
 dbconnect.close()
