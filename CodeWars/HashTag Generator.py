@@ -11,12 +11,8 @@ If the input or the result is an empty string it must return false.
 """
 
 
-def stringtolist(s):
-    return '#' + (''.join([word.capitalize() for word in s.split()]))
-
-
 def generate_hashtag(s):
-    result = stringtolist(s)
+    result = '#' + (''.join([word.capitalize() for word in s.split()]))
     if 2 > len(result) or len(result) > 140:
         return False
     else:
